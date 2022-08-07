@@ -1,0 +1,14 @@
+.todo-list {
+    list-style-type: none;
+    padding-left: 0;
+    border: 1px solid #bdbdbd;
+    border-radius: 5px;
+}
+
+.todo-list__element {
+    padding: 10px 10px;
+}
+
+.todo-list__element:not(:last-child) {
+    border-bottom: 1px solid #bdbdbd;
+}

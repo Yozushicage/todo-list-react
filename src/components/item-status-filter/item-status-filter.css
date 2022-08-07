@@ -1,0 +1,42 @@
+.item-status-filter {
+    display: flex;
+}
+
+.status-filter-btn {
+    --gray-color: #727272;
+    background-color: #ffff;
+    border: 1px solid var(--gray-color);
+    color: var(--gray-color);
+    transition: 0.5s;
+}
+
+.status-filter-btn:first-child {
+    border-radius: 4px 0 0 4px;
+    border-right: 0;
+}
+
+.status-filter-btn:last-child {
+    border-radius: 0 4px 4px 0;
+    border-left: 0;
+}
+
+.status-filter-btn:first-child:hover {
+    color: #ffff;
+    background-color: #298298;
+    box-shadow: 0 0 3px #298298;
+    transition: 0.5s;
+}
+
+.status-filter-btn:hover {
+    color: #ffff;
+    background-color: var(--gray-color);
+    box-shadow: 0 0 3px var(--gray-color);
+    transition: 0.5s;
+}
+
+.status-filter-btn--active {
+    --turquoise-color: #2e93ac;
+    color: #ffff;
+    background-color: var(--turquoise-color);
+    border-color: var(--turquoise-color);
+}

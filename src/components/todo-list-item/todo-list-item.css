@@ -1,0 +1,59 @@
+.todo-list-item {
+    --green-color: #4ec85d;
+    --red-color: #c84e4e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.todo-list-item--important {
+    color: #5d83c3;
+    font-weight: 700;
+}
+
+.todo-list-item--done {
+    text-decoration: line-through;
+}
+
+.todo-list-item__buttons {
+    display: flex;
+}
+
+.todo-list-item__btn {
+    width: 20px;
+    height: 20px;
+    padding: 2px;
+    margin: 0 5px;
+    background-color: #fff;
+    border-radius: 3px;
+}
+
+.todo-list-item__excl-icon {
+    background: url(./assets/green-exclamation-icon.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: 1px solid var(--green-color);
+    transition: 0.5s;
+}
+
+.todo-list-item__trash-icon {
+    background: url(./assets/red-trash-icon.png);
+    background-size: contain;
+    border: 1px solid var(--red-color);
+    transition: 0.5s;
+}
+
+.todo-list-item__excl-icon:hover {
+    background: url(./assets/white-exclamation-icon.png);
+    background-size: contain;
+    box-shadow: 0px 0px 4px var(--green-color);
+    transition: 0.5s;
+}
+
+.todo-list-item__trash-icon:hover {
+    background: url(./assets/white-trash-icon.png);
+    background-size: contain;
+    box-shadow: 0px 0px 4px var(--red-color);
+    transition: 0.5s;
+}

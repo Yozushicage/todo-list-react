@@ -1,0 +1,27 @@
+.search-panel {
+    display: flex;
+    justify-content: space-between;
+}
+
+.search-line {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 5px 5px;
+    margin-right: 5px;
+    border: 1px solid #bdbdbd;
+    border-radius: 5px;
+}
+
+.search-line::placeholder {
+    color: #212529;
+    opacity: 0.4;
+}
+
+.search-line:focus {
+    --border-color: #9ebff9;
+    color: #212529;
+    background-color: #fff;
+    border-color: var(--border-color);
+    outline: 0;
+    box-shadow: 0 0 0 2px var(--border-color);
+}
